@@ -1,0 +1,104 @@
+.bitllet-escena { margin: 1rem 0 2rem; }
+
+.bitllet {
+  display: flex;
+  width: 100%;
+  max-width: 760px;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  filter: drop-shadow(0 14px 22px rgba(43, 42, 51, 0.18));
+}
+
+.bitllet__cos,
+.bitllet__resguard {
+  color: #fff;
+}
+.bitllet__cos {
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  padding: 1.3rem 1.6rem;
+  border-radius: 20px 0 0 20px;
+  background: linear-gradient(135deg, var(--coral), #ff8a5c);
+}
+.bitllet__capcalera {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  opacity: 0.95;
+}
+.bitllet__trajecte {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-title);
+  font-size: clamp(1.15rem, 3vw, 1.6rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.bitllet__fletxa { width: 60px; flex: none; }
+.bitllet small {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 0.15rem;
+}
+.bitllet__lloc { flex: 1; }
+.bitllet__dades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.6rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.bitllet__trepat {
+  width: 0;
+  border-left: 3px dashed rgba(255, 255, 255, 0.7);
+  background: var(--coral);
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bitllet__resguard {
+  display: grid;
+  place-items: center;
+  width: 128px;
+  flex: none;
+  border-radius: 0 20px 20px 0;
+  background: linear-gradient(135deg, #ff8a5c, var(--sun));
+  transform-origin: left center;
+}
+.bitllet__segell {
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  padding: 0.3rem 0.6rem;
+  transform: rotate(-12deg);
+  white-space: nowrap;
+}
+
+.bitllet__contingut {
+  margin-top: 2rem;
+}
+
+@media (max-width: 560px) {
+  .bitllet__resguard { width: 78px; }
+  .bitllet__segell { font-size: 0.9rem; padding: 0.2rem 0.4rem; }
+  .bitllet__trajecte { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+  .bitllet__fletxa { transform: rotate(90deg); width: 34px; }
+  .bitllet__cos { padding: 1rem 1.1rem; }
+}

@@ -1,0 +1,17 @@
+.estat {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.estat__nom {
+  padding: 0.05rem 0.55rem;
+  border-radius: 999px;
+  background: var(--paper-2);
+}
+.estat--en-curs .estat__nom { background: var(--sun); color: var(--ink); }
+.estat--fet .estat__nom { background: var(--teal); color: #fff; }
+.estat__detall { color: var(--ink-soft); font-weight: 600; }

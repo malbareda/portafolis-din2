@@ -1,0 +1,83 @@
+.escaleta { margin: 0; font-family: var(--font-ui); }
+
+.escaleta__linia {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.escaleta__tram {
+  flex-basis: 0;
+  min-width: 64px;
+  display: grid;
+  gap: 0.1rem;
+  text-align: left;
+  padding: 0.5rem 0.55rem;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--accent, var(--sky)) calc(12% + var(--i) * 6%), white);
+  color: var(--ink);
+  line-height: 1.15;
+  transition: transform 0.15s ease;
+}
+.escaleta__tram[aria-selected='true'] {
+  background: var(--accent, var(--sky));
+  color: #fff;
+  transform: translateY(-3px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .escaleta__tram { transition: none; }
+  .escaleta__tram[aria-selected='true'] { transform: none; }
+}
+.escaleta__temps { font-size: 0.72rem; font-weight: 800; opacity: 0.8; }
+.escaleta__nom { font-size: 0.82rem; font-weight: 700; }
+
+.escaleta__regle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  font-weight: 700;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.escaleta__detall {
+  background: var(--paper);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+.escaleta__guio { margin: 0 0 0.6rem; font-size: 0.9rem; color: var(--ink-soft); }
+.escaleta__text, .prosa .escaleta__text {
+  margin: 0 0 0.8rem;
+  font-family: var(--font-prose);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  font-style: normal;
+  border-left: 4px solid var(--accent, var(--sky));
+  padding-left: 0.9rem;
+  color: var(--ink);
+}
+.escaleta__recursos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.8rem;
+  padding: 0;
+}
+.escaleta__recursos li {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--sun);
+}
+.escaleta__nav { display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem; font-weight: 700; }
+.escaleta__nav button {
+  background: #fff; border: 2px solid var(--line); border-radius: 999px;
+  padding: 0.2rem 0.8rem; font-weight: 700; cursor: pointer;
+}
+.escaleta__nav button:disabled { opacity: 0.4; cursor: default; }
+.escaleta__peu { margin-top: 0.7rem; font-size: 0.82rem; color: var(--ink-soft); }

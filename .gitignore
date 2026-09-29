@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.DS_Store
+
+# Material sensible: MAI es publica
+privat/
+
+# Material de treball del curs (PDFs de les sessions): no es publica
+Modul1/
+Modul2/
+Modul3/
+Modul4/
+Informació del curs _ Odissea.pdf
+
+# Documents de referència (PdD amb noms de companys, bio): no es publiquen
+Referencies/
+
+# Notes de treball i instruccions per a Claude: no es publiquen
+CLAUDE.md
+NOTES.md

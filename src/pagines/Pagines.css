@@ -1,0 +1,81 @@
+/* Portada */
+.portada {
+  display: grid;
+  gap: 1.5rem;
+  padding: 3.5rem 0 2rem;
+}
+.portada__avantitol {
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--coral);
+  margin: 0 0 0.6rem;
+}
+.portada__titol { margin: 0; }
+.portada__fletxa { color: var(--coral); }
+.portada__sub {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 500;
+  color: var(--ink-soft);
+  margin-top: 0.4rem;
+}
+.portada__autor { margin: 0.8rem 0 0; font-weight: 700; }
+.portada__text { color: var(--ink); }
+
+.seccio-titol { margin-top: 2rem; }
+.seccio-intro { color: var(--ink-soft); margin-top: -0.2rem; }
+
+/* Pàgina de parada */
+.parada__cap {
+  background:
+    radial-gradient(circle at 90% -20%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 55%),
+    color-mix(in srgb, var(--accent) 12%, var(--paper));
+  border-bottom: 4px solid var(--accent);
+  padding: 1.4rem 0 1.8rem;
+}
+.parada__tornar {
+  display: table;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 1.2rem;
+}
+.parada__tornar:hover { text-decoration: underline; }
+.parada__codi {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.1rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-title);
+  font-weight: 600;
+}
+.parada__titol { margin-bottom: 0.2rem; }
+.parada__subtitol { margin: 0; font-size: 1.15rem; color: var(--ink-soft); }
+.parada__sessions { margin: 0.3rem 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+
+.parada__cos { padding-top: 2rem; }
+
+.seccio { margin-bottom: 3rem; }
+.seccio > h2 {
+  margin-top: 0;
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  display: inline-block;
+}
+
+.parada__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 2px dashed var(--line);
+  font-weight: 700;
+}
+.parada__nav a { text-decoration: none; color: var(--accent); }
+.parada__nav a:hover { text-decoration: underline; }

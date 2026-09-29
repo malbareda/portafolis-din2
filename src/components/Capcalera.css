@@ -1,0 +1,69 @@
+.capcalera {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.capcalera__dins {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+}
+.capcalera__marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-title);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.capcalera__ruta {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  overflow-x: auto;
+}
+.capcalera__ruta li { display: flex; align-items: center; }
+.capcalera__ruta li + li::before {
+  content: '';
+  width: 14px;
+  height: 3px;
+  background: var(--line);
+  border-radius: 2px;
+}
+.capcalera__punt {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 2px solid var(--c);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--c);
+  background: #fff;
+  white-space: nowrap;
+}
+.capcalera__punt--actual { background: var(--c); color: #fff; }
+.capcalera__punt--apagat { border-color: var(--line); color: #b9ad9c; border-style: dashed; background: transparent; }
+
+.peu {
+  padding: 3rem 0 2rem;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .capcalera__nom { display: none; }
+  .capcalera__punt { padding: 0.1rem 0.4rem; font-size: 0.7rem; }
+  .capcalera__ruta li + li::before { width: 6px; }
+}

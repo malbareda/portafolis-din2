@@ -1,0 +1,143 @@
+.auto {
+  margin: 0;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  --c-jo: var(--coral);
+  --c-altres: var(--teal);
+}
+
+.auto__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+.auto__vistes { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.auto__vista {
+  border: 2px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.25rem 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.auto__vista[aria-checked='true'] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.auto__filtre { display: inline-flex; gap: 0.4rem; align-items: center; font-weight: 700; font-size: 0.88rem; cursor: pointer; }
+.auto__filtre input { accent-color: var(--coral); width: 1rem; height: 1rem; }
+
+.auto__llegenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+}
+.auto__llegenda span { display: inline-flex; align-items: center; gap: 0.35rem; }
+.auto__mostra { display: inline-grid; place-items: center; font-style: normal; }
+.auto__mostra--jo { width: 1.4rem; height: 0.7rem; border-radius: 4px; background: var(--c-jo); }
+.auto__mostra--company, .auto__punt-company {
+  width: 1.05rem; height: 1.05rem; border-radius: 50%;
+  background: #fff; border: 2px solid var(--c-altres); color: var(--c-altres);
+  font-size: 0.6rem; font-weight: 800;
+}
+.auto__mostra--mitjana { width: 4px; height: 1rem; background: var(--ink); border-radius: 2px; }
+.auto__mostra--fantasma { width: 1.4rem; height: 0.7rem; border-radius: 4px; background: #e9dccb; }
+.auto__mostra--sortida { width: 1.4rem; height: 0.7rem; border-radius: 4px; background: var(--c-altres); }
+
+.auto__escala {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: calc(50% + 0.8rem);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--ink-soft);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.auto__bloc { margin-top: 0.9rem; }
+.auto__nom-bloc { font-size: 1rem; margin: 0 0 0.3rem; color: var(--accent, var(--ink)); }
+.auto__llista { list-style: none; margin: 0; padding: 0; }
+
+.auto__item {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.45rem 0.4rem;
+  border-bottom: 1px dashed var(--line);
+  border-radius: 8px;
+}
+.auto__item--marca { background: #fff6e0; }
+
+.auto__num {
+  display: inline-grid; place-items: center;
+  width: 1.4rem; height: 1.4rem; border-radius: 50%;
+  background: var(--paper-2); font-size: 0.75rem; font-weight: 800; margin-right: 0.2rem;
+}
+.auto__diferencia {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.auto__diferencia--mes { background: color-mix(in srgb, var(--c-altres) 18%, white); color: color-mix(in srgb, var(--c-altres) 70%, black); }
+.auto__diferencia--menys { background: color-mix(in srgb, var(--c-jo) 18%, white); color: color-mix(in srgb, var(--c-jo) 70%, black); }
+
+.auto__pista {
+  position: relative;
+  height: 46px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(90deg, var(--paper-2) 0 calc(25% - 2px), #fff calc(25% - 2px) 25%);
+}
+.auto__barra {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  height: 12px;
+  border-radius: 6px;
+  display: block;
+}
+.auto__barra--jo { background: var(--c-jo); opacity: 0.85; }
+.auto__barra--sortida { background: var(--c-altres); }
+.auto__barra--fantasma { background: #e9dccb; }
+.auto__buit {
+  position: absolute; inset: 10px auto auto 6px;
+  font-size: 0.72rem; font-weight: 700; color: #6b5200;
+  background: repeating-linear-gradient(-45deg, #fff3c4, #fff3c4 6px, #ffeaa0 6px, #ffeaa0 12px);
+  padding: 0 0.4rem; border-radius: 6px;
+}
+.auto__punt-company {
+  position: absolute;
+  top: 23px;
+  display: grid;
+  place-items: center;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.auto__punt-company--dubte { border-style: dashed; background: var(--paper); }
+.auto__mitjana {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  width: 4px;
+  margin-left: -2px;
+  border-radius: 2px;
+  background: var(--ink);
+}
+
+.auto__peu { margin-top: 0.9rem; font-size: 0.82rem; color: var(--ink-soft); }
+
+@media (max-width: 640px) {
+  .auto__item { grid-template-columns: 1fr; gap: 0.35rem; }
+  .auto__escala { margin-left: 0.4rem; margin-right: 0.4rem; }
+}

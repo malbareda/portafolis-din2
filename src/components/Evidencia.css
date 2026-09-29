@@ -1,0 +1,99 @@
+.evidencia {
+  --accent-evid: var(--accent, var(--coral));
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border-top: 6px solid var(--accent-evid);
+  margin: 2.2rem 0;
+  max-width: calc(var(--measure) + 4rem);
+  overflow: hidden;
+}
+
+.evidencia__cap {
+  padding: 1.2rem 1.5rem 0;
+}
+
+.evidencia__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.evidencia__tipus {
+  background: color-mix(in srgb, var(--accent-evid) 14%, white);
+  color: color-mix(in srgb, var(--accent-evid) 70%, black);
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+}
+.evidencia__data {
+  color: var(--ink-soft);
+  padding: 0.1rem 0;
+}
+
+.evidencia__titol {
+  font-size: 1.35rem;
+  margin-bottom: 0.8rem;
+}
+
+.evidencia__pestanyes {
+  display: flex;
+  gap: 0.3rem;
+  border-bottom: 2px solid var(--line);
+}
+.evidencia__pestanya {
+  background: none;
+  border: 0;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  border-radius: 8px 8px 0 0;
+}
+.evidencia__pestanya[aria-selected='true'] {
+  color: var(--ink);
+  border-bottom-color: var(--accent-evid);
+}
+.evidencia__pestanya:hover { background: var(--paper); }
+
+.evidencia__escena {
+  perspective: 1200px;
+}
+.evidencia__cos {
+  padding: 1.3rem 1.5rem 0.4rem;
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+.evidencia--girada .evidencia__cos {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent-evid) 6%, white), #fff 120px);
+}
+
+.evidencia__peu {
+  padding: 0.4rem 1.5rem 1.2rem;
+}
+.evidencia__girar {
+  background: var(--accent-evid);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.5rem 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.evidencia__girar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px -6px var(--accent-evid);
+}
+@media (prefers-reduced-motion: reduce) {
+  .evidencia__girar { transition: none; }
+  .evidencia__girar:hover { transform: none; }
+}
+
+@media (max-width: 560px) {
+  .evidencia__cap, .evidencia__cos, .evidencia__peu { padding-left: 1rem; padding-right: 1rem; }
+}
