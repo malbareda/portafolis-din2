@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useReducedMotion } from '../hooks.js'
 import './Bitllet.css'
 
 // El tiquet d'entrada com un bitllet de tren: tancat, mostra les dades del viatge;

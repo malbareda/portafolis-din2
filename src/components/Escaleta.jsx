@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useReducedMotion } from '../hooks.js'
 import { blocs } from '../content/dades/parlament.js'
 import './Escaleta.css'
 

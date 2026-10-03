@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useReducedMotion } from '../hooks.js'
 import { blocs, companys, escala, items } from '../content/dades/autoavaluacio.js'
 import './Autoavaluacio.css'
 

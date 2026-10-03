@@ -1,5 +1,12 @@
 import { useEffect, useState } from 'react'
 
+// Les animacions formen part del relat (el bitllet que es trenca, les targetes que giren),
+// així que la web no fa cas de l'opció «reduir moviment» del sistema.
+// Per tornar-la a respectar: importar useReducedMotion de 'framer-motion' en lloc d'aquí.
+export function useReducedMotion() {
+  return false
+}
+
 export function useMediaQuery(query) {
   const [coincideix, setCoincideix] = useState(() => window.matchMedia(query).matches)
   useEffect(() => {

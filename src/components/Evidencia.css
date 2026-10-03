@@ -89,10 +89,6 @@
   transform: translateY(-1px);
   box-shadow: 0 6px 14px -6px var(--accent-evid);
 }
-@media (prefers-reduced-motion: reduce) {
-  .evidencia__girar { transition: none; }
-  .evidencia__girar:hover { transform: none; }
-}
 
 @media (max-width: 560px) {
   .evidencia__cap, .evidencia__cos, .evidencia__peu { padding-left: 1rem; padding-right: 1rem; }

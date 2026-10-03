@@ -26,10 +26,6 @@
   color: #fff;
   transform: translateY(-3px);
 }
-@media (prefers-reduced-motion: reduce) {
-  .escaleta__tram { transition: none; }
-  .escaleta__tram[aria-selected='true'] { transform: none; }
-}
 .escaleta__temps { font-size: 0.72rem; font-weight: 800; opacity: 0.8; }
 .escaleta__nom { font-size: 0.82rem; font-weight: 700; }
 

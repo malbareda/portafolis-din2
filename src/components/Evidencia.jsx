@@ -1,5 +1,6 @@
 import { Children, isValidElement, useId, useState } from 'react'
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { useReducedMotion } from '../hooks.js'
 import './Evidencia.css'
 
 // Una evidència té dues cares: el que vaig fer (davant) i el que en vaig aprendre (reflexió).

@@ -76,9 +76,6 @@
   0% { transform: scale(0.85); opacity: 0.9; }
   100% { transform: scale(1.35); opacity: 0; }
 }
-@media (prefers-reduced-motion: reduce) {
-  .mapa__parada--en-curs .mapa__node::after { animation: none; opacity: 0.5; }
-}
 
 .mapa__targeta {
   display: grid;
@@ -94,10 +91,6 @@
 }
 .mapa__parada--esquerra .mapa__targeta { border-left: 0; border-right: 6px solid var(--c); text-align: right; justify-items: end; }
 a.mapa__targeta:hover { transform: translateY(-3px); box-shadow: 0 18px 30px -14px rgba(43, 42, 51, 0.35); }
-@media (prefers-reduced-motion: reduce) {
-  .mapa__targeta { transition: none; }
-  a.mapa__targeta:hover { transform: none; }
-}
 .mapa__parada--properament .mapa__targeta {
   background: transparent;
   box-shadow: none;

@@ -1,4 +1,5 @@
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useReducedMotion } from '../hooks.js'
 import MapaViatge from '../components/MapaViatge.jsx'
 import { paginaSolta } from '../contingut.js'
 import './Pagines.css'

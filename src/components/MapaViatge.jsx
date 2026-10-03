@@ -1,6 +1,6 @@
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { parades } from '../content/viatge.js'
-import { useMediaQuery } from '../hooks.js'
+import { useMediaQuery, useReducedMotion } from '../hooks.js'
 import EstatParada from './EstatParada.jsx'
 import './MapaViatge.css'
 
