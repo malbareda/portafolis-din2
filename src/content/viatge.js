@@ -29,10 +29,10 @@ export const parades = [
     tipus: 'modul',
     codi: 'M9',
     titol: 'Gestió de conflictes',
-    subtitol: '',
+    subtitol: 'Gestionar, no solucionar',
     color: 'var(--m9)',
     sessions: '08/10 · 09/10 · 15/10 · 16/10',
-    estat: 'properament',
+    estat: 'en-curs',
     lliurament: '25/10/2026',
   },
   {
