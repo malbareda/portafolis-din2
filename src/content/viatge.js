@@ -10,7 +10,7 @@ export const parades = [
     titol: "Tiquet d'entrada",
     subtitol: 'El punt de partida',
     color: 'var(--coral)',
-    estat: 'en-curs',
+    estat: 'fet',
     lliurament: '11/10/2026',
   },
   {
@@ -21,7 +21,7 @@ export const parades = [
     subtitol: 'Escoltar, dir, conduir',
     color: 'var(--m8)',
     sessions: '17/09 · 18/09 · 01/10 · 02/10',
-    estat: 'en-curs',
+    estat: 'fet',
     lliurament: '11/10/2026',
   },
   {
