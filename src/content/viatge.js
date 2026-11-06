@@ -43,7 +43,7 @@ export const parades = [
     subtitol: '',
     color: 'var(--m10)',
     sessions: '29/10 · 30/10 · 05/11 · 06/11',
-    estat: 'properament',
+    estat: 'en-curs',
     lliurament: '15/11/2026',
   },
   {
