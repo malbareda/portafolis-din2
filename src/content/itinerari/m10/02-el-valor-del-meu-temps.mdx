@@ -1,0 +1,49 @@
+---
+titol: Blau, groc i verd
+ordre: 2
+---
+
+import temsBlau from '../../../assets/evidencies/m10/m10-temps-blau.jpg'
+import temsGroc from '../../../assets/evidencies/m10/m10-temps-groc.jpg'
+import temsVerd from '../../../assets/evidencies/m10/m10-temps-verd.jpg'
+import mural1 from '../../../assets/evidencies/m10/m10-mural-1.jpg'
+import mural2 from '../../../assets/evidencies/m10/m10-mural-2.jpg'
+import mural3 from '../../../assets/evidencies/m10/m10-mural-3.jpg'
+import mural4 from '../../../assets/evidencies/m10/m10-mural-4.jpg'
+
+export const galeria = {display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.8rem', margin: '1.2rem 0'}
+export const foto = {width: '100%', borderRadius: '10px', boxShadow: '0 2px 10px rgba(0,0,0,0.15)', display: 'block'}
+
+<Evidencia titol="Dinàmica «El valor del meu temps»" tipus="Activitat de sessió" data="06/11/2026 · sessió 4">
+<Davant>
+
+A la sessió 4 vam fer una dinàmica individual i col·lectiva: cadascú escriu en targetes de tres colors què li aporta valor (blau), què li desgasta (groc) i quin temps voldria preservar o recuperar (verd). Després enganxem totes les targetes en un mural comú per fer-ne una lectura conjunta.
+
+**El mural col·lectiu**, amb les targetes de «temps valuós» i «temps que em desgasta» de tot el grup:
+
+<div style={galeria}>
+  <img src={mural1} alt="Mural de post-its: temps valuós i temps que desgasta (1)" style={foto} />
+  <img src={mural2} alt="Mural de post-its: temps valuós i temps que desgasta (2)" style={foto} />
+  <img src={mural3} alt="Mural de post-its: temps a preservar o recuperar" style={foto} />
+  <img src={mural4} alt="Mural de post-its: temps valuós (detall)" style={foto} />
+</div>
+
+**La meva lectura dels patrons**: mentre fèiem la posada en comú, vaig anar comptant quantes vegades apareixia cada tema a les targetes de cada color:
+
+<div style={galeria}>
+  <img src={temsBlau} alt="Recompte de temes en blau: temps valuós" style={foto} />
+  <img src={temsGroc} alt="Recompte de temes en groc: temps que desgasta" style={foto} />
+  <img src={temsVerd} alt="Recompte de temes en verd: temps a preservar" style={foto} />
+</div>
+
+</Davant>
+<Reflexio>
+
+El patró del grup no m'ha sorprès, però veure'l comptat sí que pesa diferent. Al groc, el que més es repeteix no són els imprevistos puntuals, són les reunions burocràtiques, les interrupcions i la manca de son: desgast estructural, no accidental. Al blau, el que dona valor és gairebé sempre contacte directe —classes amb l'alumnat, converses productives, ajudar, coordinació— mai la gestió. I al verd, el que tothom voldria recuperar és el més senzill: no tenir interrupcions, un cafè, reflexionar, caminar.
+
+És literalment la mateixa foto que la meva matriu d'Eisenhower, però feta per tot un grup de direccions alhora: el que dona sentit és el contacte i la pedagogia, el que esgota és la burocràcia i les interrupcions, i el que es vol protegir és temps per pensar amb calma. Si el patró es repeteix igual en vint persones diferents, deixa de ser un problema de gestió personal del temps i passa a ser un problema de disseny institucional: cap d'aquestes direccions hem decidit individualment que la burocràcia pesi més que la pedagogia, però el sistema ho acaba organitzant així per a tothom.
+
+El meu compromís concret per la setmana vinent surt directament del verd: protegir els primers deu minuts després de cada guàrdia per no entrar a la classe o reunió següent amb el cap encara a l'anterior. És petit, però és l'únic «temps verd» de la llista que depèn només de mi i no d'una decisió d'equip.
+
+</Reflexio>
+</Evidencia>
