@@ -63,7 +63,7 @@ export const parades = [
     titol: 'Tiquet de sortida',
     subtitol: "L'arribada",
     color: 'var(--teal)',
-    estat: 'properament',
+    estat: 'en-curs',
     lliurament: '29/11/2026',
   },
 ]
