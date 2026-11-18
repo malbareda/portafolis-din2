@@ -54,7 +54,7 @@ export const parades = [
     subtitol: '',
     color: 'var(--m11)',
     sessions: '12/11 · 13/11 · 19/11 · 20/11',
-    estat: 'properament',
+    estat: 'en-curs',
     lliurament: '29/11/2026',
   },
   {
